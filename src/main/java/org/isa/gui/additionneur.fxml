@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="440.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.isa.gui.AdditionneurController">
+   <children>
+      <TextArea fx:id="resultat" editable="false" prefHeight="200.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </TextArea>
+      <Button fx:id="chiffre1" layoutX="36.0" layoutY="234.0" minHeight="45.0" minWidth="45.0" mnemonicParsing="false" onAction="#chiffre_click" text="1" textAlignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="chiffre2" layoutX="106.0" layoutY="234.0" minHeight="45.0" minWidth="45.0" mnemonicParsing="false" onAction="#chiffre_click" text="2" textAlignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="chiffre5" layoutX="319.0" layoutY="234.0" minHeight="45.0" minWidth="45.0" mnemonicParsing="false" onAction="#chiffre_click" text="5" textAlignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="chiffre9" layoutX="248.0" layoutY="299.0" minHeight="45.0" minWidth="45.0" mnemonicParsing="false" onAction="#chiffre_click" text="9" textAlignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="chiffre8" layoutX="176.0" layoutY="299.0" minHeight="45.0" minWidth="45.0" mnemonicParsing="false" onAction="#chiffre_click" text="8" textAlignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="chiffre7" layoutX="106.0" layoutY="299.0" minHeight="45.0" minWidth="45.0" mnemonicParsing="false" onAction="#chiffre_click" text="7" textAlignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="chiffre6" layoutX="36.0" layoutY="299.0" minHeight="45.0" minWidth="45.0" mnemonicParsing="false" onAction="#chiffre_click" text="6" textAlignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="chiffre4" layoutX="248.0" layoutY="234.0" minHeight="45.0" minWidth="45.0" mnemonicParsing="false" onAction="#chiffre_click" text="4" textAlignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="chiffre3" layoutX="176.0" layoutY="234.0" minHeight="45.0" minWidth="45.0" mnemonicParsing="false" onAction="#chiffre_click" text="3" textAlignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="chiffre0" layoutX="319.0" layoutY="299.0" minHeight="45.0" minWidth="45.0" mnemonicParsing="false" onAction="#chiffre_click" text="0" textAlignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="vider" layoutX="37.0" layoutY="361.0" mnemonicParsing="false" onAction="#vider_click" prefHeight="46.0" prefWidth="114.0" text="Vider">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="calculer" layoutX="248.0" layoutY="361.0" mnemonicParsing="false" onAction="#calculer_click" prefHeight="46.0" prefWidth="113.0" text="Calculer">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="423.0" layoutY="368.0" mnemonicParsing="false" onAction="#goBackToMenu" text="Back to Menu" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="42.60000000000002">
+         <font>
+            <Font name="Bauhaus 93" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

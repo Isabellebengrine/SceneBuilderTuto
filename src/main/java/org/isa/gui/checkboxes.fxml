@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.isa.gui.CheckboxesController">
+   <children>
+      <TextArea fx:id="saisie" layoutX="28.0" layoutY="52.0" onKeyReleased="#afficheOptionsChoix" prefHeight="32.0" prefWidth="335.0" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="52.0" />
+      <CheckBox fx:id="boxfond" disable="true" layoutX="427.0" layoutY="90.0" mnemonicParsing="false" onAction="#afficheOptionsFond" text="Couleur du fond" />
+      <CheckBox fx:id="boxfondrouge" disable="true" layoutX="70.0" layoutY="243.0" mnemonicParsing="false" onAction="#applyRedBackgdColor" text="Rouge" />
+      <CheckBox fx:id="boxfondbleu" disable="true" layoutX="70.0" layoutY="300.0" mnemonicParsing="false" onAction="#applyBlueBackgdColor" text="Bleu" />
+      <CheckBox fx:id="boxfondvert" disable="true" layoutX="70.0" layoutY="271.0" mnemonicParsing="false" onAction="#applyGreenBackgdColor" text="Vert" />
+      <CheckBox fx:id="boxcassemaj" disable="true" layoutX="427.0" layoutY="268.0" mnemonicParsing="false" onAction="#applyUpperCase" text="Majuscule" />
+      <CheckBox fx:id="boxcassemin" disable="true" layoutX="427.0" layoutY="240.0" mnemonicParsing="false" onAction="#applyLowerCase" text="Minuscule" />
+      <CheckBox fx:id="boxcasse" disable="true" layoutX="426.0" layoutY="149.0" mnemonicParsing="false" onAction="#afficheOptionsCasse" text="Casse" />
+      <CheckBox fx:id="boxtexte" disable="true" layoutX="426.0" layoutY="118.0" mnemonicParsing="false" onAction="#afficheOptionsTexte" text="Couleur du texte" />
+      <Label fx:id="labelfond" disable="true" layoutX="70.0" layoutY="207.0" text="Fond" />
+      <Label fx:id="labelchoix" disable="true" layoutX="427.0" layoutY="62.0" text="Choix" />
+      <Label fx:id="labelcasse" disable="true" layoutX="427.0" layoutY="206.0" text="Casse" />
+      <CheckBox fx:id="boxtxtrouge" disable="true" layoutX="249.0" layoutY="241.0" mnemonicParsing="false" onAction="#applyRedFontColor" text="Rouge" />
+      <CheckBox fx:id="boxtxtnoir" disable="true" layoutX="249.0" layoutY="298.0" mnemonicParsing="false" onAction="#applyBlackFontColor" text="Noir" />
+      <CheckBox fx:id="boxtxtblanc" disable="true" layoutX="249.0" layoutY="269.0" mnemonicParsing="false" onAction="#applyWhiteFontColor" text="Blanc" />
+      <Label fx:id="labeltexte" disable="true" layoutX="249.0" layoutY="205.0" text="Texte" />
+      <Label fx:id="resultat" layoutX="28.0" layoutY="118.0" prefHeight="31.0" prefWidth="335.0" />
+      <Button fx:id="btnBack" layoutX="427.0" layoutY="337.0" mnemonicParsing="false" onAction="#goBackToMenu" text="Back to Menu" AnchorPane.bottomAnchor="37.4" AnchorPane.rightAnchor="84.2" />
+   </children>
+</AnchorPane>
